@@ -21,7 +21,7 @@ const routes: Routes = [
     component: ProductComponent, // 親ルートで ProductComponent を表示する
     children: [
       { path: '', component: ProductListComponent }, // 子ルートのパスを空に設定し、ProductListComponent を表示する
-      { path: 'detail', component: ProductDetailComponent } // 'detail' パスに対して ProductDetailComponent を表示する
+      { path: ':productId', component: ProductDetailComponent } // 'detail' パスに対して ProductDetailComponent を表示する
     ]
   }
 ];
